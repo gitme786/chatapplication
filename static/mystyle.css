@@ -160,15 +160,15 @@
                                                                             font-size: 40px;
                                                                         }
                                                                         footer {
-                                                                            padding-top: 5px;
+                                                                            padding-top: 7px;
                                                                             background-color: #006AFF;
-                                                                            padding-bottom: 0px;
+                                                                            padding-bottom: 1px;
                                                                             margin-bottom: 0px;
                                                                             border-top-left-radius: 15px;
                                                                             border-top-right-radius: 15px;
                                                                         }
                                                                         .footerspan {
-                                                                            padding: 0px;
+                                                                            padding-bottom: 0px;
                                                                             font-weight: normal;
                                                                         }
                                                                     }
