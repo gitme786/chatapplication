@@ -96,8 +96,27 @@
     }
     */
                                                                     }
+                                                                    /* -----------------------SOME MORE CSS */
+                                                                    
+                                                                    .text_class {
+                                                                        color: #006AFF
+                                                                    }
+                                                                    /* SOME MEDIA QUERIES */
+                                                                    
+                                                                    .text_class h5 {
+                                                                        font-weight: 900;
+                                                                        color: #006AFF
+                                                                    }
+                                                                    
+                                                                    .card {
+                                                                        border-color: #006AFF;
+                                                                    }
+                                                                    /* SOME MEDIA QUERIES */
                                                                     
                                                                     @media only screen and (max-width: 600px) {
+                                                                        #introSection2 {
+                                                                            text-align: center;
+                                                                        }
                                                                         #introSection1 h5 {
                                                                             font-size: 40px;
                                                                         }
