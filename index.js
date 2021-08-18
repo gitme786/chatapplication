@@ -16,6 +16,14 @@ app.get('/', (req, res) => {
             res.send(data)
     });
 })
+app.get('/test', (req, res) => {
+    fs.readFile('views/test.html', 'utf8', function(err, data) {
+        if (err)
+            console.log(err);
+        else
+            res.send(data)
+    });
+})
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)

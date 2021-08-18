@@ -1,0 +1,104 @@
+                                                                    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+                                                                    * {
+                                                                        font-family: 'Ubuntu', sans-serif;
+                                                                        font-weight: bold;
+                                                                    }
+                                                                    
+                                                                    nav ul {}
+                                                                    
+                                                                    .navbar-nav {
+                                                                        margin-left: auto;
+                                                                        margin-right: 10vw;
+                                                                    }
+                                                                    
+                                                                    .dropdown-item {
+                                                                        font-weight: bolder;
+                                                                        color: #006AFF;
+                                                                    }
+                                                                    
+                                                                    .btn {
+                                                                        margin-top: 30px;
+                                                                        padding: 10px 20px;
+                                                                        border-radius: 30px;
+                                                                    }
+                                                                    
+                                                                    .btn:hover {
+                                                                        margin-top: 30px;
+                                                                        padding: 10px 20px;
+                                                                        border-radius: 30px;
+                                                                        color: #006AFF;
+                                                                        background-color: white;
+                                                                    }
+                                                                    
+                                                                    #introSection1 {
+                                                                        margin: 0px;
+                                                                        padding-top: 60px;
+                                                                        padding-bottom: 10vh;
+                                                                        background-color: #006AFF;
+                                                                        border-bottom-right-radius: 85px;
+                                                                    }
+                                                                    
+                                                                    #introSection1 h5 {
+                                                                        font-size: 4rem;
+                                                                        font-weight: bolder;
+                                                                        padding-top: 10px;
+                                                                        padding-left: 30px;
+                                                                        color: aliceblue;
+                                                                    }
+                                                                    
+                                                                    #introSection1 p {
+                                                                        padding-left: 30px;
+                                                                        padding-top: 10px;
+                                                                        color: aliceblue;
+                                                                    }
+                                                                    
+                                                                    #introSection1 .btn {
+                                                                        margin-left: 30px;
+                                                                        padding-top: 10px;
+                                                                        font-weight: bold;
+                                                                        border-color: white;
+                                                                        color: white;
+                                                                    }
+                                                                    
+                                                                    #introSection1 .btn:hover {
+                                                                        background-color: white;
+                                                                        color: #006AFF;
+                                                                        border-color: #006AFF;
+                                                                    }
+                                                                    /* CSS FOR INTRO SECTION 2 */
+                                                                    
+                                                                    #introSection2 {
+                                                                        padding-top: 10px;
+                                                                        padding-left: 30px;
+                                                                    }
+                                                                    
+                                                                    #introSection2 h5 {
+                                                                        font-size: 2.5rem;
+                                                                        font-weight: bolder;
+                                                                        padding-top: 10px;
+                                                                        padding-left: 30px;
+                                                                        color: #006AFF;
+                                                                        /* font-style: oblique; */
+                                                                    }
+                                                                    
+                                                                    #introSection2 p {
+                                                                        font-style: italic;
+                                                                        padding-left: 30px;
+                                                                        font-size: large;
+                                                                        padding-top: 10px;
+                                                                        color: alic #006AFF;
+                                                                    }
+                                                                    
+                                                                    #introSection2 .btn {
+                                                                        margin-left: 30px;
+                                                                        margin-top: 10px;
+                                                                        /* color: alic #006AFF;
+    }
+    */
+                                                                    }
+                                                                    
+                                                                    @media only screen and (max-width: 600px) {
+                                                                        #introSection1 h5 {
+                                                                            font-size: 40px;
+                                                                        }
+                                                                    }

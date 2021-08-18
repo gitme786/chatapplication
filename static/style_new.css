@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#introSection {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+}
+
+#introSection1 {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: center;
+}
+
+#introSection0 {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding-left: 40px;
+    padding: 60px;
+    /* justify-content: center; */
+    /* color: blue; */
+    background-color: #006AFF;
+    border-bottom-right-radius: 85px;
+}
+
+#introSection0 h5 {
+    color: white;
+    font-weight: bolder;
+    font-size: 5rem;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#introSection0 p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card {
+    margin: auto 10px;
+    padding: 10px 20px;
+    /* height: 12rem; */
+}
+
+.cardintro {
+    margin: auto 10px;
+    padding: 10px 20px;
+}
+
+.cardintro .responsivecard {
+    width: 35%;
+}
+
+#introSection1 h5 {
+    color: #006AFF;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#introSection1 p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#btn_started {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+#linkchatteron {
+    color: #006AFF;
+}
+
+#linkleena {
+    color: #006AFF;
+}
+
+.btnhover {
+    font-weight: bold;
+    border-color: white;
+    color: white;
+}
+
+.btnhover:hover {
+    background-color: white;
+    color: #006AFF;
+    border-color: #006AFF;
+}
+
+@media only screen and (max-width: 800px) {
+    /* .cardintro {
+        width: 100%;
+    } */
+    #introSection0 {
+        border: 2px solid black;
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+    }
+    #introSection0 h5 {
+        padding: 0%;
+        font-size: 40px;
+    }
+    /* APPLIYING MEDIA QUERIES ON SECOND SECTION */
+    #introSection1 {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        width: 100%;
+    }
+    .responsivecard {
+        display: block;
+        border: 2px solid black;
+        background-color: tomato;
+        width: max-content;
+    }
+    #introSection1 h5 {
+        font-size: 20px;
+    }
+    #introSection1 p {}
+    #introSection {
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+    #introSection .card {
+        margin: 10px auto;
+    }
+}
