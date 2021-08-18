@@ -4,8 +4,6 @@
                                                                         font-weight: bold;
                                                                     }
                                                                     
-                                                                    nav ul {}
-                                                                    
                                                                     .navbar-nav {
                                                                         margin-left: auto;
                                                                         margin-right: 10vw;
@@ -113,11 +111,64 @@
                                                                     }
                                                                     /* SOME MEDIA QUERIES */
                                                                     
+                                                                    footer {
+                                                                        padding: 5px;
+                                                                        padding-bottom: 1px;
+                                                                        /* margin-bottom: 0px; */
+                                                                        border-top-left-radius: 45px;
+                                                                        border-top-right-radius: 45px;
+                                                                        background-color: #006AFF;
+                                                                        color: white;
+                                                                        font-size: 10px;
+                                                                        font-weight: normal;
+                                                                    }
+                                                                    
+                                                                    #linkleena {
+                                                                        font-weight: normal;
+                                                                        color: white;
+                                                                        border: 1px solid white;
+                                                                        border-radius: 12px;
+                                                                        padding: 4px;
+                                                                    }
+                                                                    
+                                                                    #linkleena:hover {
+                                                                        background-color: white;
+                                                                        color: #006AFF;
+                                                                    }
+                                                                    
+                                                                    #linkleena a {
+                                                                        font-weight: normal;
+                                                                        text-decoration: none;
+                                                                        color: white;
+                                                                    }
+                                                                    
+                                                                    #linkleena a:hover {
+                                                                        text-decoration: none;
+                                                                        color: #006AFF;
+                                                                    }
+                                                                    
+                                                                    .footerspan {
+                                                                        padding: 2px;
+                                                                        font-weight: normal;
+                                                                    }
+                                                                    
                                                                     @media only screen and (max-width: 600px) {
                                                                         #introSection2 {
                                                                             text-align: center;
                                                                         }
                                                                         #introSection1 h5 {
                                                                             font-size: 40px;
+                                                                        }
+                                                                        footer {
+                                                                            padding-top: 5px;
+                                                                            background-color: #006AFF;
+                                                                            padding-bottom: 0px;
+                                                                            margin-bottom: 0px;
+                                                                            border-top-left-radius: 15px;
+                                                                            border-top-right-radius: 15px;
+                                                                        }
+                                                                        .footerspan {
+                                                                            padding: 0px;
+                                                                            font-weight: normal;
                                                                         }
                                                                     }
