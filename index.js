@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const fs = require('fs');
 const app = express();
 const port = 3000;
@@ -6,6 +7,9 @@ const port = 3000;
 
 
 app.use('/static', express.static(__dirname + '/static'))
+
+app.set('views', path.join(__dirname, 'views'));
+
 
 
 app.get('/', (req, res) => {
