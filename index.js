@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const app = express();
+const hostname = '127.0.0.1';
 const port = 3000;
 
 
@@ -13,6 +14,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 app.get('/', (req, res) => {
+    console.log(__dirname);
+    console.log(path.join(__dirname, 'views'));
     fs.readFile('views/index.html', 'utf8', function(err, data) {
         if (err)
             console.log(err);
