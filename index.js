@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const app = express();
-const hostname = '139.59.60.194';
+// const hostname = '139.59.60.194';
 const port = 3000;
 
 
@@ -24,19 +24,23 @@ app.get('/', (req, res) => {
     });
 })
 app.get('/chat', (req, res) => {
-    fs.readFile('views/chat.html', 'utf8', function(err, data) {
-        if (err)
-            console.log(err);
-        else
-            res.send(data)
-    });
+    // fs.readFile('views/chat.html', 'utf8', function(err, data) {
+    // if (err)
+    //     console.log(err);
+    // else
+    params = {};
+    res.status(200).render('views/chat.html', params);
+    // res.send(data)
+    // }
+);
 })
 app.get('/docker', (req, res) => {
     fs.readFile('./views/docker.html', 'utf8', function(err, data) {
         if (err)
             console.log(err);
         else
-            res.send(data)
+            res.status(200).render('index.html', params);
+        res.send(data)
     });
 })
 app.get('/test', (req, res) => {
