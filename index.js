@@ -5,7 +5,7 @@ const port = 3000;
 
 
 
-app.use('/static', express.static('static'))
+app.use('/static', express.static(__dirname + '/static'))
 
 
 app.get('/', (req, res) => {
