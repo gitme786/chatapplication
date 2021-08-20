@@ -25,7 +25,7 @@ app.get('/chat', (req, res) => {
     });
 })
 app.get('/docker', (req, res) => {
-    fs.readFile('views/docker.html', 'utf8', function(err, data) {
+    fs.readFile('./views/docker.html', 'utf8', function(err, data) {
         if (err)
             console.log(err);
         else
