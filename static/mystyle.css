@@ -97,13 +97,13 @@
                                                                     /* -----------------------SOME MORE CSS */
                                                                     
                                                                     .text_class {
-                                                                        color: #006AFF
+                                                                        color: #006AFF;
                                                                     }
                                                                     /* SOME MEDIA QUERIES */
                                                                     
                                                                     .text_class h5 {
                                                                         font-weight: 900;
-                                                                        color: #006AFF
+                                                                        color: #006AFF;
                                                                     }
                                                                     
                                                                     .card {

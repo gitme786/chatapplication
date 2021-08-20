@@ -1,0 +1,119 @@
+body {
+    /* background-color: #006AFF; */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background-color: #006AFF;
+    width: 100%;
+    height: 20%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    background-color: #006AFF;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    opacity: 0.7;
+}
+
+.section_yaxis {
+    height: 5vh;
+}
+
+.section_horizantal {
+    width: 10vw;
+}
+
+#sectionmain {
+    height: 90vh;
+}
+
+
+/* LEFT SECTION CSS */
+
+#leftsection {
+    background-color: white;
+    border: 1px solid gray;
+    margin: 0;
+    opacity: 0.8;
+    margin: 0px 0px;
+}
+
+#leftsection1 {
+    margin: 0px 0px;
+    width: 100%;
+    /* padding: 1px; */
+    height: 7vh;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 0;
+    opacity: 0.8;
+}
+
+#leftsection2 {
+    height: 10vh;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 0;
+    opacity: 0.8;
+    /* left: 0; */
+}
+
+#leftsection3 {
+    height: 4vh;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 0;
+    opacity: 0.8;
+}
+
+#leftsection4 {
+    height: 70vh;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 0;
+    opacity: 0.8;
+}
+
+
+/* RIGHT SECTION CSS */
+
+#rightsection {
+    background-color: aliceblue;
+    opacity: 0.7;
+    margin: 0px 0px;
+    border: 1px solid gray;
+    padding: 0px 0px;
+}
+
+#rightsection1 {
+    height: 7vh;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 0;
+    opacity: 0.8;
+}
+
+#rightsection2 {
+    height: 77vh;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 0;
+    opacity: 0.8;
+}
+
+#rightsection3 {
+    height: 7vh;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 0;
+    opacity: 0.8;
+}

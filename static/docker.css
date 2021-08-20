@@ -1,0 +1,40 @@
+.card {
+    border-color: white;
+    border-width: 1px;
+    border-radius: 0;
+}
+
+.card h4 {
+    color: white;
+    text-align: center;
+}
+
+.card-body {
+    background-color: #006AFF;
+}
+
+#introSection1 {
+    /* height: 80vh; */
+    margin-bottom: 10px;
+    /* background-color: cornsilk; */
+}
+
+.code_style {
+    background-color: white;
+    color: #006AFF;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card_body p {
+    /* background-color: white; */
+    color: #006AFF;
+    /* margin: 5px;
+    padding: 5px; */
+}
+
+.introSection2 {
+    /* height: 80vh; */
+    /* margin-bottom: 10px; */
+    background-color: white;
+}
