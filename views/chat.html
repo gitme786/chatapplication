@@ -13,52 +13,164 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <title>Chat with Your Friends</title>
+    <script src="https://use.fontawesome.com/0631e9eb8f.js"></script>
 
-    <link rel="stylesheet" href="../static/chatstyle.css">
+    <link rel="stylesheet" href="../static/css/chatstyle.css">
+
+
+
+    <!-- SOCKET IO SERVER  SE CONNECTION ESTABLISH KARNE K LIYE -->
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+
+    <!-- CLIENT KI SCRIPT -->
+    <script defer src="../static/client.js"></script>
 </head>
 
 <body>
+
+
     <div id="body">
-        <div class="section_yaxis">
+        <div class="section_yaxis1">
+            <img src="../static/images/logo2.png" class="card-img-top" alt="...">
 
         </div>
 
 
         <div id="sectionmain" class="container-fluid row">
-            <div id="section_horizantal" class="col-md-2 col-sm-12"></div>
-            <div id="leftsection" class="col-md-2 p-0 m-0 col-sm-2">
-                <div id="leftsection1 row container">
-                    <div class="card col-3" style="display:inline">
-                        <img src="..." class="card-img-top" alt="...">
+            <div id="section_horizantal" class="col-md-2 col-sm-2"></div>
+            <!-- THIS IS LEFT SECTION --------------------------------->
+            <!-- THIS IS LEFT SECTION --------------------------------->
+            <!-- THIS IS LEFT SECTION --------------------------------->
+            <!-- THIS IS LEFT SECTION --------------------------------->
+            <div id="leftsection" class="#######EMPTY##########">
+                <!-- THIS IS LEFT SECTION 1--------------------------------->
+
+                <div id="leftsection1" class=" row container">
+                    <div class="col-12  p-1 imagecenter">
+                        <img src="../static/images/avatar2.png" class="card-img-top" alt="...">
+
                     </div>
-                    <div class="card col-8" style="display:inline">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick content.</p>
-                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+
+                </div>
+                <!-- THIS IS LEFT SECTION 2--------------------------------->
+                <div id="leftsection2" class=" row container-fluid p-0">
+                    <div class="col-12 m-0 p-2 text-center">
+                        <p class="bluecolortext username">Himanshu Singh</p>
+                        <!-- <img src="../static/avatar.png" class="card-img-top" alt="..."> -->
+                    </div>
+                    <!-- <div class="col-12 m-0 py-3 text-center">
+                        <p class="bluecolortext textheading py-0 m-0">Get Notified Of New Messages</p>
+                        <p class="bluecolortext textdesc py-2 m-0">Turn on Desktop Notifications</p>
+                        <img src="../static/avatar.png" class="card-img-top" alt="...">
+                    </div> -->
+
+                </div>
+
+
+                <!-- THIS IS LEFT SECTION 3--------------------------------->
+                <!-- <div id="leftsection3"></div> -->
+
+
+
+                <!-- THIS IS LEFT SECTION 4--------------------------------->
+
+                <div id="leftsection4">
+
+                    <div class="col-12 m-0 py-3 text-center">
+                        <p class="bluecolortext textheading py-0 m-0">Accounts Department</p>
+                        <!-- <p class="bluecolortext textdesc py-2 m-0">Chat With Accounts Department</p> -->
+                        <!-- <img src="../static/avatar.png" class="card-img-top" alt="..."> -->
+                        <hr style="color: #006AFF;">
+                    </div>
+
+                    <div class="col-12 m-0 py-2 text-center">
+                        <p class="bluecolortext textheading py-0 m-0">HR Department</p>
+                        <!-- <p class="bluecolortext textdesc py-2 m-0">Chat With HR Department</p> -->
+                        <!-- <img src="../static/avatar.png" class="card-img-top" alt="..."> -->
+                        <hr style="border:1px solid #006AFF;">
+                    </div>
+                    <div class="col-12 m-0 py-1 text-center">
+                        <p class="bluecolortext textheading py-0 m-0">IT Department</p>
+                        <!-- <p class="bluecolortext textdesc py-2 m-0">Chat With IT Department</p> -->
+                        <!-- <img src="../static/avatar.png" class="card-img-top" alt="..."> -->
+                        <hr style="border:1px solid #006AFF;">
+                    </div>
+                    <div class="col-12 m-0 py-1 text-center">
+                        <p class="bluecolortext textheading py-0 m-0">Customer Success Department</p>
+                        <!-- <p class="bluecolortext textdesc py-2 m-0">Chat With Customer Success Department</p> -->
+                        <!-- <img src="../static/avatar.png" class="card-img-top" alt="..."> -->
+                        <hr style="border:1px solid #006AFF;">
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <!-- THIS IS RIGHT SECTION ---------------------------------------->
+            <!-- THIS IS RIGHT SECTION ---------------------------------------->
+            <!-- THIS IS RIGHT SECTION ---------------------------------------->
+            <!-- THIS IS RIGHT SECTION ---------------------------------------->
+
+
+
+            <div id="rightsection" class="col-md-8   p-0     col-sm-8">
+
+                <div id="rightsection1" class=" row">
+                    <div class="col-1 m-0 p-1 text-center">
+                        <img src="../static/images/avatar.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="col-9 m-0 py-1 ">
+                        <p class="bluecolortext username">Group Chat</p>
+                        <!-- <p class="bluecolortext textheading py-0 m-0">Get Notified Of New Messages</p>
+                        <p class="bluecolortext textdesc py-2 m-0">Turn on Desktop Notifications</p>
+                        <img src="../static/avatar.png" class="card-img-top" alt="..."> -->
+                    </div>
+
+
+                </div>
+                <div id="rightsection2" class="messageContainer">
+
+                    <!-- <div class="message left">Anand@Leena : Hello Himanshu Whats The Progress Of The Chat App? </div>
+                    <div class="message right">Himanshu@Chatteron : Into It </div>
+                    <div class="message right">Himanshu@Chatteron : I Will Complete It very Soon </div>
+                    <div class="message left">Anand@Leena : Okay </div>
+                    <div class="chatcenter">Anand@Leena joined chat</div> -->
+
+
+
+                </div>
+                <form action="#" class="hide-submit" id="send-container">
+                    <div id="rightsection3" class=" row container-fluid pr-2">
+                        <div id="message_box" style="width:90%">
+
+                            <input type="text" name="messageInp" id="messageInp" placeholder="Type Your Message ...">
+                            <!-- <button class="btn" type="submit"></button> -->
+
                         </div>
-                    </div>
+                        <div id="message_send_box" style="width:10%;padding-right: 5px;">
+
+                            <label>
+                                    <input type="submit" />
+                                    <svg id="search-icon" aria-hidden="true" focusable="false" color="#006AFF" data-prefix=" far " data-icon="paper-plane " class="svg-inline--fa fa-paper-plane fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg " viewBox="0 0 512 512 ">
+                                        <path fill="currentColor "
+                                        d="M440
+                                        6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192
+                                        464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z ">
+                                    </path>            </svg>
+                                  </label>
+                            </button>
+                        </div>
+                </form>
                 </div>
-                <div id="leftsection2">
-
-                </div>
-                <div id="leftsection3"></div>
-                <div id="leftsection4"></div>
-            </div>
-
-            <div id="rightsection" class="col-md-6 p-0 m-0 col-sm-8">
-
-                <div id="rightsection1"></div>
-                <div id="rightsection2"></div>
-                <div id="rightsection3"></div>
 
             </div>
-            <div id="section_horizantal" class="col-md-2 col-sm-12"></div>
+            <div id="section_horizantal " class="col-md-2 col-sm-2 "></div>
 
         </div>
 
-        <div class="section_yaxis">
+        <div class="section_yaxis2 ">
 
         </div>
 
@@ -69,12 +181,12 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous "></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js " integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js " integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/ " crossorigin="anonymous "></script>
     -->
 </body>
 
