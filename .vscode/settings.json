@@ -1,0 +1,10 @@
+{
+    // configure bash (only for Windows users)
+ "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+ "terminal.integrated.shellArgs.windows": ["-l", "-i"],
+ // PRETTIER
+"editor.formatOnSave": true,
+"json.schemas": [
+
+]
+}

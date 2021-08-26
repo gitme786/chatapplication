@@ -1,27 +1,33 @@
 // Node Server which will  handle socket io connections
 // const io = require('socket.io')(8000)
-const io = require('socket.io')(8000, {
+const io = require("socket.io")(8000, {
     cors: {
-        origin: '*',
-    }
+        origin: "*",
+    },
 });
 
 // server-side
 // const io = require("socket.io");
 
-const users = {}
+const users = {};
 
 console.log("Started........");
 
-io.on('connection', socket => {
-    socket.on('new-user-joined', name => {
+io.on("connection", (socket) => {
+    socket.on("new-user-joined", (name) => {
         console.log("New USer", name);
         users[socket.id] = name;
-        socket.broadcast.emit('user-joined', name);
-
+        socket.broadcast.emit("user-joined", name);
     });
 
-    socket.on('send', message => {
-        socket.broadcast.emit('receive', { message: message, name: users[socket.id] });
-    })
+    socket.on("send", (message) => {
+        socket.broadcast.emit("receive", {
+            message: message,
+            name: users[socket.id],
+        });
+    });
+    socket.on("disconnect", (message) => {
+        socket.broadcast.emit("left", users[socket.id]);
+        delete users[socket.id];
+    });
 });

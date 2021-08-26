@@ -5,6 +5,12 @@ const sayHello = function() {
 }
 
 
+const sayHello1 = function() {
+    console.log("Hello Bakchodi1");
+}
+
+
+eEmitter.addListener('introduce', sayHello1);
 eEmitter.on('introduce', sayHello);
 
 
